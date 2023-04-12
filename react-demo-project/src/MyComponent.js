@@ -6,7 +6,12 @@ class MyComponent extends Component {
   }
 
   render() {
-    return <h1>{this.props.title}</h1>;
+    return (
+      <div>
+        <h1>{this.props.title}</h1>
+        <button onClick={this.props.action}>Click Me!</button>
+      </div>
+    );
   }
 }
 

@@ -6,8 +6,12 @@ class App extends Component {
     super(props);
   }
 
-  render(){
-    return<MyComponent title = "React"/>;
+  consoleLogFunction() {
+    console.log("button has been clicked");
+  }
+
+  render() {
+    return <MyComponent title="React" action={this.consoleLogFunction} />;
   }
 }
 
