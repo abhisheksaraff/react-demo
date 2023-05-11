@@ -17,7 +17,7 @@ const App = () => {
     return () => {
       document.removeEventListener("click", changeColorOnClick);
     };
-  }, [color]);
+  }, [color]); // parameter for change (componentDidUpdate())
 
   return (
     <div>
