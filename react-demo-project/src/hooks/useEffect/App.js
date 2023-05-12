@@ -14,6 +14,7 @@ const App = () => {
     
     document.addEventListener("click", changeColorOnClick);
 
+    //code that executes when componentWillUnmount()
     return () => {
       document.removeEventListener("click", changeColorOnClick);
     };
