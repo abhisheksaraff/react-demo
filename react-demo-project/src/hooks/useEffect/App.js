@@ -3,9 +3,15 @@ import React, { useState, useEffect } from "react";
 const App = () => {
   //functional state
   const [color, setColor] = useState("black");
+  const [count, setCount] = useState(0)
 
   useEffect(() => {
+    console.log("hi")
+
     const changeColorOnClick = () => {
+      let tempCount = count + 1;
+      setCount(tempCount)
+      console.log(tempCount);
       if (color === "black") {
         setColor("red");
       } else {
@@ -13,13 +19,13 @@ const App = () => {
       }
     };
     
-    document.addEventListener("click", changeColorOnClick);
+    document.addEventListener("keyup", changeColorOnClick);
 
     //code that executes when componentWillUnmount()
     return () => {
-      document.removeEventListener("click", changeColorOnClick);
+      document.removeEventListener("keyup", changeColorOnClick);
     };
-  }, [color]); // parameter for change (componentDidUpdate())
+  }, [color, count]); // parameter for change (componentDidUpdate())
 
   return (
     <div>
