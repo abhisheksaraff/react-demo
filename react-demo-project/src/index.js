@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import App from './hooks/useEffect/App';
+import App from './reactRouterDOM/RouteSwitch';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

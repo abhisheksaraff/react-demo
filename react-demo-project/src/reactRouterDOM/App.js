@@ -1,9 +1,5 @@
-import React from "react";
-import ReactDOM from "react-dom/client";
-import RouteSwitch from "./RouteSwitch";
-
-function App(){
-    return<></>
+function App() {
+  return <h1>Hello from App</h1>
 }
 
 export default App;
