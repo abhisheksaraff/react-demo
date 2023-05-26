@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom"; //npm i react-router-dom
 import App from "./App";
 import Profile from "./Profile";
 
